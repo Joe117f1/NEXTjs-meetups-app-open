@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
-
 import { getMongoConnection } from '../helpers/db-utils';
 import MeetupList from '../components/meetups/MeetupList';
 
@@ -40,6 +39,6 @@ export const getStaticProps = async () => {
 
   } catch (error) {
     return { notFound: true };
-  };
+  }
 };
 export default HomePage;
